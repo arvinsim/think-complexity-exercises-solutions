@@ -8,7 +8,7 @@ Challenges
 
 4. ~~Write a method named remove_edge that takes an edge and removes all references to it from the graph.~~
 
-5. Write a method named vertices that returns a list of the vertices in a graph.
+5. ~~Write a method named vertices that returns a list of the vertices in a graph.~~
 
 6. Write a method named edges that returns a list of edges in a graph. Note that in our representation of an undirected graph there are two references to each edge.
 

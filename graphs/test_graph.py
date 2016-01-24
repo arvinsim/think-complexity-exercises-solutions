@@ -32,6 +32,7 @@ class TestQuestion3(unittest.TestCase):
 
         self.assertIs(result, None)
 
+
 class TestQuestion4(unittest.TestCase):
     def test_remove_all_edges(self):
         v1 = MyVertex('v1')
@@ -50,6 +51,23 @@ class TestQuestion4(unittest.TestCase):
         g.remove_edge(e1)
 
         self.assertIs(g.get_edge(v1, v2), None)
+
+
+class TestQuestion5(unittest.TestCase):
+    def test_return_all_vertices(self):
+        v1 = MyVertex('v1')
+        v2 = MyVertex('v2')
+        v3 = MyVertex('v3')
+
+        g = MyGraph()
+        g.add_vertex(v1)
+        g.add_vertex(v2)
+
+        v = g.vertices()
+
+        self.assertTrue(len(v), 2)
+        self.assertTrue(v1 == v[0])
+        self.assertTrue(v2 == v[1])
 
 if __name__ == '__main__':
     unittest.main()

@@ -18,12 +18,18 @@ class MyGraph(Graph):
         """#4
         Remove all references to the pass edge
         :param edge:
-        :return:
         """
         v1 = edge[0]
         v2 = edge[1]
         del self[v1][v2]
         del self[v2][v1]
+
+    def vertices(self):
+        """#5
+        Returns a list of the vertices in a graph
+        :return: list
+        """
+        return [vertex for vertex in self]
 
 
 class MyVertex(Vertex):

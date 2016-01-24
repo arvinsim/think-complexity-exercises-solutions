@@ -24,7 +24,7 @@ class Vertex(object):
     def __init__(self, label=''):
         """
         create a new vertex
-        label is the name of the vertext
+        label is the name of the vertex
         """
         self.label = label
     def __repr__(self):

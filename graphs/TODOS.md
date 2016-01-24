@@ -4,9 +4,9 @@ Challenges
 
 2. ~~Make a copy of GraphCode.py called Graph.py. Add the following methods to Graph, adding test code as you go.~~
 
-3. Write a method named get_edge that takes two vertices and returns the edge between them if it exists and None otherwise. Hint: use a try statement.
+3. ~~Write a method named get_edge that takes two vertices and returns the edge between them if it exists and None otherwise. Hint: use a try statement.~~
 
-4. Write a method named remove_edge that takes an edge and removes all references to it from the graph.
+4. ~~Write a method named remove_edge that takes an edge and removes all references to it from the graph.~~
 
 5. Write a method named vertices that returns a list of the vertices in a graph.
 

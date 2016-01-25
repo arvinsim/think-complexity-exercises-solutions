@@ -31,6 +31,22 @@ class MyGraph(Graph):
         """
         return [vertex for vertex in self]
 
+    def edges(self):
+        """#6
+        Returns a list of edges form the graph
+        :return: list
+        """
+        vertices = self.vertices()
+        edges = set()
+        for v1 in vertices:
+            for v2 in vertices:
+                try:
+                    edges.add(self[v1][v2])
+                except:
+                    pass
+        return edges
+
+
 
 class MyVertex(Vertex):
     pass

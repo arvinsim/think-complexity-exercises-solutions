@@ -69,5 +69,24 @@ class TestQuestion5(unittest.TestCase):
         self.assertTrue(v1 == v[0])
         self.assertTrue(v2 == v[1])
 
+class TestQuestion6(unittest.TestCase):
+    def test_return_all_edges(self):
+        v1 = MyVertex('v1')
+        v2 = MyVertex('v2')
+        v3 = MyVertex('v3')
+        e1 = MyEdge(v1, v2)
+        e2 = MyEdge(v2, v3)
+
+        g = MyGraph()
+        g.add_vertex(v1)
+        g.add_vertex(v2)
+        g.add_vertex(v3)
+        g.add_edge(e1)
+        g.add_edge(e2)
+
+        es = g.edges()
+
+        self.assertTrue(len(es), 2)
+
 if __name__ == '__main__':
     unittest.main()

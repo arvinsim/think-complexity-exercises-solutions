@@ -65,7 +65,7 @@ class TestQuestion5(unittest.TestCase):
 
         v = g.vertices()
 
-        self.assertTrue(len(v), 2)
+        self.assertEqual(len(v), 2)
         self.assertTrue(v1 in v)
         self.assertTrue(v2 in v)
 
@@ -86,7 +86,7 @@ class TestQuestion6(unittest.TestCase):
 
         es = g.edges()
 
-        self.assertTrue(len(es), 2)
+        self.assertEqual(len(es), 2)
         self.assertTrue(e1 in es)
         self.assertTrue(e2 in es)
 
@@ -107,7 +107,7 @@ class TestQuestion7(unittest.TestCase):
 
         out_vertices = g.out_vertices(v2)
 
-        self.assertTrue(len(out_vertices), 2)
+        self.assertEqual(len(out_vertices), 2)
         self.assertTrue(v1 in out_vertices)
         self.assertTrue(v2 not in out_vertices)
         self.assertTrue(v3 in out_vertices)
@@ -129,7 +129,7 @@ class TestQuestion8(unittest.TestCase):
 
         out_edges = g.out_edges(v2)
 
-        self.assertTrue(len(out_edges), 2)
+        self.assertEqual(len(out_edges), 2)
         self.assertTrue(e1 in out_edges)
         self.assertTrue(e2 in out_edges)
 

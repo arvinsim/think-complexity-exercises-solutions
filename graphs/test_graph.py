@@ -66,8 +66,8 @@ class TestQuestion5(unittest.TestCase):
         v = g.vertices()
 
         self.assertTrue(len(v), 2)
-        self.assertTrue(v1 == v[0])
-        self.assertTrue(v2 == v[1])
+        self.assertTrue(v1 in v)
+        self.assertTrue(v2 in v)
 
 class TestQuestion6(unittest.TestCase):
     def test_return_all_edges(self):
@@ -87,6 +87,25 @@ class TestQuestion6(unittest.TestCase):
         es = g.edges()
 
         self.assertTrue(len(es), 2)
+
+class TestQuestion7(unittest.TestCase):
+    def test_out_vertices(self):
+        v1 = MyVertex('v1')
+        v2 = MyVertex('v2')
+        v3 = MyVertex('v3')
+        e1 = MyEdge(v1, v2)
+        e2 = MyEdge(v2, v3)
+
+        g = MyGraph()
+        g.add_vertex(v1)
+        g.add_vertex(v2)
+        g.add_vertex(v3)
+        g.add_edge(e1)
+        g.add_edge(e2)
+
+        out_vertices = g.out_vertices(v2)
+
+        self.assertTrue(len(out_vertices), 2)
 
 if __name__ == '__main__':
     unittest.main()

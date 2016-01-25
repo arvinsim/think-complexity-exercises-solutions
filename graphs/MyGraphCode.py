@@ -33,8 +33,8 @@ class MyGraph(Graph):
 
     def edges(self):
         """#6
-        Returns a list of edges form the graph
-        :return: list
+        Returns a list of edges from the graph
+        :return: set
         """
         vertices = self.vertices()
         edges = set()
@@ -46,6 +46,15 @@ class MyGraph(Graph):
                     pass
         return edges
 
+    def out_vertices(self, vertex):
+        """#7
+        Takes a vertex and returns a list of adjacent vertices
+        :return:
+        """
+        adjacent_vertices = set()
+        for v in self[vertex]:
+            adjacent_vertices.add(v)
+        return adjacent_vertices
 
 
 class MyVertex(Vertex):

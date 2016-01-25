@@ -12,7 +12,7 @@ Challenges
 
 6. ~~Write a method named edges that returns a list of edges in a graph. Note that in our representation of an undirected graph there are two references to each edge.~~
 
-7. Write a method named out_vertices that takes a Vertex and returns a list of the adjacent vertices (the ones connected to the given node by an edge).
+7. ~~Write a method named out_vertices that takes a Vertex and returns a list of the adjacent vertices (the ones connected to the given node by an edge).~~
 
 8. Write a method named out_edges that takes a Vertex and returns a list of edges connected to the given Vertex.
 

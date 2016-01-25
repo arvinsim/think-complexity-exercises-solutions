@@ -14,6 +14,6 @@ Challenges
 
 7. ~~Write a method named out_vertices that takes a Vertex and returns a list of the adjacent vertices (the ones connected to the given node by an edge).~~
 
-8. Write a method named out_edges that takes a Vertex and returns a list of edges connected to the given Vertex.
+8. ~~Write a method named out_edges that takes a Vertex and returns a list of edges connected to the given Vertex.~~
 
 9. Write a method named add_all_edges that starts with an edgeless Graph and makes a complete graph by adding edges between all pairs of vertices.

@@ -133,5 +133,22 @@ class TestQuestion8(unittest.TestCase):
         self.assertTrue(e1 in out_edges)
         self.assertTrue(e2 in out_edges)
 
+class TestQuestion9(unittest.TestCase):
+    def test_add_all_edges(self):
+        v1 = MyVertex('v1')
+        v2 = MyVertex('v2')
+        v3 = MyVertex('v3')
+        e1 = MyEdge(v1, v2)
+        e2 = MyEdge(v2, v3)
+
+        g = MyGraph()
+        g.add_vertex(v1)
+        g.add_vertex(v2)
+        g.add_vertex(v3)
+
+        g.add_all_edges(e1, e2)
+
+        self.assertTrue(len(g.edges()), 2)
+
 if __name__ == '__main__':
     unittest.main()

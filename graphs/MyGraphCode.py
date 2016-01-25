@@ -66,6 +66,17 @@ class MyGraph(Graph):
             connected_edges.add(self[vertex][v])
         return connected_edges
 
+    def add_all_edges(self, *edges):
+        """#9
+        Add all edges between all pairs of vertices
+        """
+        vertices = self.vertices()
+        for edge in edges:
+            for v1 in vertices:
+                for v2 in vertices:
+                    self[v1][v2] = edge
+
+
 class MyVertex(Vertex):
     pass
 

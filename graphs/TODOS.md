@@ -1,4 +1,4 @@
-Challenges
+Exercise 2.2
 
 1. ~~Download thinkcomplex. com/ GraphCode. py , which contains the code in this chapter. Run it as a script and make sure the test code in main does what you expect.~~ 
 

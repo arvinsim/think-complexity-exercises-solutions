@@ -2,7 +2,7 @@ from GraphCode import Graph, Vertex, Edge
 
 class MyGraph(Graph):
     def get_edge(self, v1, v2):
-        """#3
+        """Exercise 2.2 #3
         Return an edge if it exists between v1 and v2
         None otherwise
         :param v1:
@@ -15,7 +15,7 @@ class MyGraph(Graph):
             return None
 
     def remove_edge(self, edge):
-        """#4
+        """Exercise 2.2 #4
         Remove all references to the pass edge
         :param edge:
         """
@@ -25,14 +25,14 @@ class MyGraph(Graph):
         del self[v2][v1]
 
     def vertices(self):
-        """#5
+        """Exercise 2.2 #5
         Returns a list of the vertices in a graph
         :return: list
         """
         return [vertex for vertex in self]
 
     def edges(self):
-        """#6
+        """Exercise 2.2 #6
         Returns a list of edges from the graph
         :return: Set
         """
@@ -47,7 +47,7 @@ class MyGraph(Graph):
         return edges
 
     def out_vertices(self, vertex):
-        """#7
+        """Exercise 2.2 #7
         Takes a vertex and returns a list of adjacent vertices
         :return: Set
         """
@@ -57,7 +57,7 @@ class MyGraph(Graph):
         return adjacent_vertices
 
     def out_edges(self, vertex):
-        """#8
+        """Exercise 2.2 #8
         Takes a vertex and returns a list of connected edges
         :return: Set
         """
@@ -67,7 +67,7 @@ class MyGraph(Graph):
         return connected_edges
 
     def add_all_edges(self, *edges):
-        """#9
+        """Exercise 2.2 #9
         Add all edges between all pairs of vertices
         """
         vertices = self.vertices()

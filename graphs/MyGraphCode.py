@@ -1,6 +1,9 @@
 from GraphCode import Graph, Vertex, Edge
 
 class MyGraph(Graph):
+    def __init__(self):
+        super(MyGraph, self).__init__()
+
     def get_edge(self, v1, v2):
         """Exercise 2.2 #3
         Return an edge if it exists between v1 and v2

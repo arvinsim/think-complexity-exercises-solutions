@@ -1,4 +1,4 @@
-from GraphCode import Graph, Vertex, Edge
+from graphs.greenteapress.GraphCode import Graph, Vertex, Edge
 
 class MyGraph(Graph):
     def __init__(self):

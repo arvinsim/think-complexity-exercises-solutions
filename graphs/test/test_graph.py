@@ -1,5 +1,5 @@
 import unittest
-from MyGraphCode import MyGraph, MyVertex, MyEdge
+from graphs.MyGraphCode import MyGraph, MyVertex, MyEdge
 
 class TestQuestion3(unittest.TestCase):
     def test_return_true(self):

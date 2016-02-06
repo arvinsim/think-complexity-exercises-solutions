@@ -17,3 +17,7 @@ Exercise 2.2
 8. ~~Write a method named out_edges that takes a Vertex and returns a list of edges connected to the given Vertex.~~
 
 9. ~~Write a method named add_all_edges that starts with an edgeless Graph and makes a complete graph by adding edges between all pairs of vertices.~~
+
+Exercise 2.4
+
+1. Create a file named RandomGraph.py and define a class named RandomGraph that inherits from Graph and provides a method named add_random_edges that takes a probability p as a parameter and, starting with an edgeless graph, adds edges at random so that the probability is p that there is an edge between any two nodes.
